@@ -21,3 +21,37 @@
 .num {
     @apply text-6xl lg:after:content-[''] lg:after:flex lg:after:bg-[url('/img/dotted.png') lbg:after:absolute lg:after:top-4 lg:after:left-32 2xl:after:left-52 lg:after:bg-no-repeat lg:after:h-7 lg:after:w-52]";
 }
+
+.user-pic.active-pic {
+    border: 2px solid #ff7d3b
+}
+
+.user-text {
+    display: none;
+}
+
+.user-text.active-text {
+    display: block;
+    animation: moveup 1s line forwards;
+}
+
+.user-pic {
+    transition: all 0.2s ease;
+}
+
+@keyframes moveup {
+    0% {
+        margin-top: 40px;
+        opacity: 0;
+    }
+
+    50% {
+        margin-top: 20px;
+        opacity: 0.1;
+    }
+
+    100% {
+        margin-top: 0;
+        opacity: 1;
+    }
+}
