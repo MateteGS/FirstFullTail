@@ -17,3 +17,7 @@
 .blob2 {
     @apply w-80 h-80 bg-color-secondary absolute bottom-10 right-0 -z-10 blur-2xl opacity-30 overflow-hidden rounded-full;
 }
+
+.num {
+    @apply text-6xl lg:after:content-[''] lg:after:flex lg:after:bg-[url('/img/dotted.png') lbg:after:absolute lg:after:top-4 lg:after:left-32 2xl:after:left-52 lg:after:bg-no-repeat lg:after:h-7 lg:after:w-52]";
+}
